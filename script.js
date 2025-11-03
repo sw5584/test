@@ -8,3 +8,9 @@ document.addEventListener("scroll", () => {
     }
   });
 });
+
+// 페이지 로드시 첫 화면 요소 바로 보이게
+window.addEventListener("DOMContentLoaded", () => {
+  const fadeEls = document.querySelectorAll(".fade-in");
+  fadeEls.forEach(el => el.classList.add("visible"));
+});
